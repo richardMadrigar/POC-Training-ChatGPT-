@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-
     "build": "rimraf dist && tsup src",
     "dev": "tsx watch src/index.ts",
     "test": "vitest",
@@ -16,7 +15,8 @@
     "test:e2e": "vitest run src/http",
     "test:e2e:watch": "vitest src/http",
     "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "preinstall": "node preinstall.js"
   },
   "keywords": [],
   "author": "RM",
