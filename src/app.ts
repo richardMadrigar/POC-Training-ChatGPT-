@@ -33,7 +33,7 @@ app.use(
     if (err instanceof AppError) {
       return response.status(err.statusCode).json({ message: err.message });
     }
-
+    logger.warn(err);
     response.status(500).json({ message: 'Erro desconhecido!' });
     return next();
   },
