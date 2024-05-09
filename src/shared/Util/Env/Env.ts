@@ -15,7 +15,6 @@ const envSchema = z.object({
     .enum(['DEV', 'PRODUCTION', 'test', 'LOCAL'])
     .default('PRODUCTION'),
 
-  DATABASE_URL: z.string({ required_error: 'Colocar env DATABASE_URL' }),
   API_KEY_OPEN_AI: z.string({ required_error: 'Colocar env API_KEY_OPEN_AI' }),
 });
 
